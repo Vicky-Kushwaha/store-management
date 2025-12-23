@@ -56,7 +56,7 @@ A modern, full-featured store management application built with Next.js, React, 
 
 3. **Set up environment variables**
    Create a `.env.local` file in the root directory:
-   ```env
+   ```
   DB_URL=
   JWT_SECRET=
   CLOUDINARY_NAME=
