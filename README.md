@@ -41,7 +41,7 @@ A modern, full-featured store management application built with Next.js, React, 
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Vicky-Kushwaha/store-management.git
    cd store-management
    ```
 
