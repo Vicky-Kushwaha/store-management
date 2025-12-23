@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏪 Store Management System
 
-## Getting Started
+A modern, full-featured store management application built with Next.js, React, and Tailwind CSS. This application helps store owners manage their products, inventory, and user profiles efficiently.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 📦 Product Management
+- **Product Listing**: View all products in a beautiful card-based grid layout
+- **Product Details**: Detailed view of individual products with complete information
+- **Add/Edit Products**: Create and update product information including:
+  - Product name and description
+  - Category and rack location
+  - Price and stock quantity
+  - Product images
+- **Delete Products**: Remove products from inventory
+- **Stock Status**: Real-time stock status indicators (In Stock, Low Stock, Out of Stock)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 👤 User Management
+- **User Profile**: View user details including name, email, store name, and registration date
+- **Update Profile**: Edit user information with form validation
+- **Authentication**: Secure user authentication system
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🎨 Design Features
+- **Modern UI**: Clean, professional interface with gradient backgrounds
+- **Responsive Design**: Fully responsive across all devices (mobile, tablet, desktop)
+- **Color Scheme**: Professional indigo and blue color palette
+- **Smooth Animations**: Hover effects, transitions, and loading states
+- **Toast Notifications**: Real-time feedback for user actions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Technologies Used
 
-## Learn More
+- **Frontend Framework**: [Next.js 14](https://nextjs.org/) with App Router
+- **UI Library**: [React 18](https://react.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **HTTP Client**: [Axios](https://axios-http.com/)
+- **Notifications**: [Sonner](https://sonner.emilkowal.ski/)
+- **Language**: JavaScript/JSX
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd store-management
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-## Deploy on Vercel
+3. **Set up environment variables**
+   Create a `.env.local` file in the root directory:
+   ```env
+  DB_URL=
+  JWT_SECRET=
+  CLOUDINARY_NAME=
+  CLOUDINARY_API_KEY=
+  CLOUDINARY_API_SECRET=
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🔐 Authentication
+
+The application uses a global provider for user authentication state management. Ensure you have proper authentication middleware set up on your API endpoints.
+
+## 📦 State Management
+
+Uses React Context API through `GlobalProvider` for:
+- User authentication state
+- User information
+- Loading states
+
+## 🎯 Best Practices Implemented
+
+- Component-based architecture
+- Responsive design principles
+- Error handling and validation
+- Loading states for better UX
+- Optimistic UI updates
+- Clean code organization
+- Reusable components
+- Semantic HTML
+
+## 🐛 Error Handling
+
+- Form validation with real-time feedback
+- API error handling with toast notifications
+- Loading states for async operations
+- Graceful fallbacks for missing data
+
+## 🚀 Future Enhancements
+
+- [ ] Advanced search and filtering
+- [ ] Bulk product operations
+- [ ] Export data to CSV/Excel
+- [ ] Dashboard with analytics
+- [ ] Order management
+- [ ] Supplier management
+- [ ] Multi-store support
+- [ ] Dark mode toggle
+- [ ] Print invoices/reports
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👨‍💻 Author
+
+Your Name - Vicky Kumar
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- Lucide for the beautiful icon set
+- All contributors and supporters
+
+---
+
+**Made with ❤️ for store owners**
