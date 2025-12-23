@@ -56,15 +56,15 @@ A modern, full-featured store management application built with Next.js, React, 
 
 3. **Set up environment variables**
    Create a `.env.local` file in the root directory:
-   ```
-  DB_URL=
-  JWT_SECRET=
-  CLOUDINARY_NAME=
-  CLOUDINARY_API_KEY=
-  CLOUDINARY_API_SECRET=
-   ```
+      ```
+      DB_URL=
+      JWT_SECRET=
+      CLOUDINARY_NAME=
+      CLOUDINARY_API_KEY=
+      CLOUDINARY_API_SECRET=
+      ```
 
-4. **Run the development server**
+5. **Run the development server**
    ```bash
    npm run dev
    # or
@@ -73,7 +73,7 @@ A modern, full-featured store management application built with Next.js, React, 
    pnpm dev
    ```
 
-5. **Open your browser**
+6. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 🔐 Authentication
